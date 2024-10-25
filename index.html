@@ -714,7 +714,7 @@ button:hover {
 
   <div class="chat-container" id="chat-container">
     <div class="chat-header">
-        <button onclick="closeChat()">X</button>
+        Botika_1.0
     </div>
     <div class="chat-log" id="chat-log"></div>
     <div class="chat-input">
@@ -731,12 +731,8 @@ button:hover {
       body.classList.toggle("dark-mode"); 
     }
     
-    document.querySelectorAll('#taskList li').forEach(function(task) {
-      task.addEventListener('click', function() {
-        task.classList.toggle('completed');
-      });
-    });
 
+    
     function closeToast() {
       var toast = document.getElementById('toast');
       toast.style.display = 'none';
@@ -766,12 +762,30 @@ button:hover {
     function getBotResponse(input) {
        
         const responses = {
-            'hello': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készítet?,viszlát',
+            'hello': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'Hello': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'Szia': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'szia': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'Csa': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'csa': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'Szevasz': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
+            'szevasz': 'Szia! Itt vannak amikre tudok válaszolni: hogy vagy?, mi a neved?,ki készített?,viszlát',
             'hogy vagy?': 'Jól vagyok, köszönöm! És te?',
             'jól':'Na annak örülök :)',
+            'remekül':'Na annak örülök :)',
+            'nagyon jól':'Na annak örülök :)',
+            'Jól':'Na annak örülök :)',
+            'Remekül':'Na annak örülök :)',
+            'Nagyon jól':'Na annak örülök :)',
             'nem jól':'Oh sajnálattal hallom',
+            'szarul':'Oh sajnálattal hallom',
+            'én nem':'Oh sajnálattal hallom',
+            'Nem jól':'Oh sajnálattal hallom',
+            'Szarul':'Oh sajnálattal hallom',
+            'Én nem':'Oh sajnálattal hallom',
             'mi a neved?': 'Én egy egyszerű chatbot vagyok.',
             'ki készített?':'Kmetz Dominik János',
+            'az ki?':'A toast ablakban olvashatsz róla ha bezártad nyomj egy F5-öt és az oldal közepén lesz.',
             'viszlát': 'Viszlát! Szép napot!'
         };
 
